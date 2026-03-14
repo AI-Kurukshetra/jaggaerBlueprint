@@ -1,0 +1,37 @@
+# Tasks
+
+- [x] 2026-03-14 09:54 Generate initial documentation set for SupplySync AI
+- [x] 2026-03-14 10:16 Build initial Next.js + Supabase SRM app scaffold, schema, seed, and core UI
+- [x] 2026-03-14 10:31 Improve dashboard UI styling with icons, cards, and responsive layout
+- [x] 2026-03-14 10:34 Add AI Insights dashboard page for supplier performance and risk
+- [x] 2026-03-14 10:59 Fix ensureUserAndTenant duplicate users_pkey error by upserting users
+- [x] 2026-03-14 11:33 Add logout action in header
+- [x] 2026-03-14 11:11 Define expanded database schema + migrations for procurement, contracts, invoices, RFQ, approvals
+- [x] 2026-03-14 11:56 Refactor UI/UX with new dashboard layout, UI kit, charts, and supplier flows
+- [ ] Implement onboarding workflow engine and supplier portal
+- [x] 2026-03-14 11:26 Implement purchase order management (UI + API + DB)
+- [ ] Implement contract lifecycle management (UI + API + DB)
+- [ ] Implement invoice processing + three-way matching
+- [ ] Implement supplier risk assessment module
+- [ ] Implement spend analytics dashboards
+- [ ] Implement multi-level approvals + workflow configuration
+- [ ] Implement supplier communication portal
+- [ ] Implement catalog + product management
+- [ ] Implement RFQ/RFP + bid comparison
+- [ ] Implement compliance tracking + certifications
+- [ ] Implement payment processing integration hooks
+- [ ] Implement RBAC + audit logging
+- [ ] Implement mobile-friendly approval flows
+- [ ] Implement budget management
+- [ ] Implement multi-currency support + exchange rates
+- [ ] Implement notifications system
+- [ ] Implement supplier diversity tracking
+- [ ] Implement AI recommendation, predictive risk, and pricing intelligence modules
+- [x] 2026-03-14 13:10 Add 50-row seed coverage for all tables, auth validations/toasts, theme toggle, and responsive UI polish
+- [x] 2026-03-14 Add blueprint features not in product: PRD table, full sidebar nav, Inventory, Supply Chain Mapping, Crisis Management, ESG pages
+- [x] 2026-03-14 14:32 Align PRD schema + UI: renamed supplier compliance/document tables, refreshed compliance/document dashboards with filters, and synced seeds/services with PRD entities
+- [x] 2026-03-14 14:42 Add Bacancy supplier seed script, procurement supplier fields, and compliance/certification date columns
+- [ ] Implement inventory integration (connect systems, reorder automation)
+- [ ] Implement supply chain mapping & visualization (multi-tier network, risk propagation)
+- [ ] Implement crisis management & continuity planning (scenarios, contingency suppliers)
+- [ ] Implement advanced ESG monitoring (third-party data, sustainability scoring)

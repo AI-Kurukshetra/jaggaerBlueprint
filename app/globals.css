@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  font-family: var(--font-manrope), system-ui, -apple-system, sans-serif;
+  @apply bg-slate-50 text-slate-900 antialiased;
+}
+
+.gradient-bg {
+  background: radial-gradient(circle at top left, rgba(26, 127, 255, 0.16), transparent 55%),
+    radial-gradient(circle at 25% 10%, rgba(15, 96, 219, 0.12), transparent 45%),
+    linear-gradient(135deg, #f8fafc 0%, #eef4ff 100%);
+}
+
+.card {
+  @apply rounded-2xl bg-white shadow-card border border-slate-100;
+}
+
+.card-muted {
+  @apply rounded-2xl bg-slate-900 text-white shadow-soft;
+}
+
+.glass {
+  @apply bg-white/70 backdrop-blur border border-white/60;
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+.dark body {
+  @apply bg-slate-950 text-slate-100;
+}
+
+.dark .gradient-bg {
+  background: radial-gradient(circle at top left, rgba(34, 86, 182, 0.3), transparent 55%),
+    radial-gradient(circle at 25% 10%, rgba(26, 55, 110, 0.35), transparent 45%),
+    linear-gradient(135deg, #05070d 0%, #0b1326 100%);
+}
+
+.dark .card {
+  @apply border-slate-800 bg-slate-900 shadow-soft;
+}
+
+.dark .card-muted {
+  @apply bg-slate-800 text-slate-100;
+}
+
+.dark .glass {
+  @apply bg-slate-900/70 border-slate-700/60;
+}
+
+.dark .bg-white {
+  @apply bg-slate-900;
+}
+
+.dark .bg-slate-50 {
+  @apply bg-slate-900;
+}
+
+.dark .bg-slate-100 {
+  @apply bg-slate-800;
+}
+
+.dark .bg-slate-200 {
+  @apply bg-slate-800;
+}
+
+.dark .border-slate-100 {
+  @apply border-slate-800;
+}
+
+.dark .border-slate-200 {
+  @apply border-slate-800;
+}
+
+.dark .text-slate-900 {
+  @apply text-slate-100;
+}
+
+.dark .text-slate-700 {
+  @apply text-slate-200;
+}
+
+.dark .text-slate-600 {
+  @apply text-slate-300;
+}
+
+.dark .text-slate-500 {
+  color: #94a3b8; /* slate-400 */
+}
+
+.dark .text-slate-400 {
+  color: #64748b; /* slate-500 */
+}
