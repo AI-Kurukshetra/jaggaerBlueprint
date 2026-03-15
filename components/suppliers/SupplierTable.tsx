@@ -65,7 +65,6 @@ export default function SupplierTable({
             <TableHead>Contact</TableHead>
             <TableHead>Risk</TableHead>
             <TableHead>Status</TableHead>
-            <TableHead>Actions</TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>
@@ -83,17 +82,20 @@ export default function SupplierTable({
             return (
               <TableRow key={supplier.id} className="text-slate-700">
                 <TableCell className="font-medium text-slate-900">
-                  <div className="flex items-center gap-3">
+                  <Link
+                    href={`/suppliers/${supplier.id}`}
+                    className="flex items-center gap-3 group"
+                  >
                     <div className="flex h-9 w-9 items-center justify-center rounded-2xl bg-brand-50 text-xs font-semibold text-brand-700">
                       {supplier.name.slice(0, 2).toUpperCase()}
                     </div>
                     <div>
-                      <div className="text-sm font-semibold text-slate-900">
+                      <div className="text-sm font-semibold text-brand-600 group-hover:text-brand-700 transition">
                         {supplier.name}
                       </div>
                       <div className="text-xs text-slate-500">{supplier.location}</div>
                     </div>
-                  </div>
+                  </Link>
                 </TableCell>
                 <TableCell>{supplier.category}</TableCell>
                 <TableCell>
@@ -112,14 +114,6 @@ export default function SupplierTable({
                 </TableCell>
                 <TableCell>
                   <Badge variant={statusVariant}>{statusLabel}</Badge>
-                </TableCell>
-                <TableCell>
-                  <Link
-                    href={`/suppliers/${supplier.id}`}
-                    className="text-sm font-semibold text-brand-600 transition hover:text-brand-700"
-                  >
-                    Edit
-                  </Link>
                 </TableCell>
               </TableRow>
             );
